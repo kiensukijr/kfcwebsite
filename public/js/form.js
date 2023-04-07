@@ -11,7 +11,7 @@ function getInfo() {
     };
     xhttp.open(
       "GET",
-      "https://thietkewebkfc-default-rtdb.firebaseio.com/info.json",
+      "https://thekfc-c4264-default-rtdb.firebaseio.com/info.json",
       true
     );
     xhttp.send();
@@ -118,7 +118,7 @@ function getInfo() {
     };
     xhttp.open(
       "POST",
-      "https://thietkewebkfc-default-rtdb.firebaseio.com/customer.json"
+      "https://thekfc-c4264-default-rtdb.firebaseio.com/customer.json"
     );
     xhttp.setRequestHeader("Content-Type", "application/json");
     xhttp.send(JSON.stringify(params));
@@ -136,11 +136,11 @@ function getInfo() {
       validatePhone()
     ) {
       saveFormData();
-      alert("Information Successfully Saved");
+      alert("Thông tin của bạn đã được lưu lại");
      
     } else {
       
-      alert("Please Fix The Errors");
+      alert("Vui lòng điền lại thông tin");
     }
   });
   
